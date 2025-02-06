@@ -41,7 +41,8 @@ Android 移动端为爱宠人士提供一站式服务。用户不仅能通过平
 <img src="https://github.com/user-attachments/assets/1b0e2894-5634-451f-9715-efe7c0415851" width="210px" alt="主页面功能截图 11">  
 地址  
 <img src="https://github.com/user-attachments/assets/a219dd28-aa45-4d1f-8cae-2a45b6c70bae" width="210px" alt="地址页面截图 1">
-<img src="https://github.com/user-attachments/assets/29f72611-bf60-4238-93a6-b549cdc16327" width="210px" alt="地址页面截图 2">  
+<img src="https://github.com/user-attachments/assets/a78f7f39-c440-437c-96e1-97d48f300442" width="210px" alt="地址页面截图 2">
+
 客服咨询  
 <img src="https://github.com/user-attachments/assets/5e9945da-e496-420e-b8b0-601ca8331e32" width="210px" alt="客服咨询页面截图 1">
 <img src="https://github.com/user-attachments/assets/6797a25b-1fd6-4411-9d23-bad199fe42f1" width="210px" alt="客服咨询页面截图 2">

@@ -1,0 +1,16 @@
+<resources>
+    <array name="icons">
+        <item>@drawable/baseline_https_24</item>
+        <item>@drawable/baseline_account_circle_24</item>
+        <item>@drawable/baseline_location_on_24</item>
+        <item>@drawable/baseline_send_24</item>
+    </array>
+
+    <array name="colors">
+        <item>#FF5722</item>
+        <item>#03A9F4</item>
+        <item>#4CAF50</item>
+        <item>#FFEB3B</item>
+    </array>
+
+</resources>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/dialogColor">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="30dp">
+                    <ImageView
+                        android:id="@+id/petImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/login_bg"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/petName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="贵宾犬"
+                        android:textSize="30sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp">
+                    </TextView>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="参考价格:"
+                            android:textSize="15sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="5dp">
+                        </TextView>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+                            </Space>
+
+                            <TextView
+                                android:id="@+id/petPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="800-7000"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp">
+                            </TextView>
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+                            </Space>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="¥"
+                                android:textSize="20sp"
+                                android:textColor="@color/whiteOrange"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="5dp">
+                            </TextView>
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+                            </Space>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="基本信息"
+                    android:textSize="15sp"
+                    android:textColor="@color/whiteRed"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/orange">
+                </TextView>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="体重"
+                        android:textColor="@color/white"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/button">
+                    </TextView>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/petWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4-8">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="kg">
+                        </TextView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="身高"
+                        android:textColor="@color/white"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/button">
+                    </TextView>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+
+                        <TextView
+                            android:id="@+id/petHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22-38">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cm">
+                        </TextView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="寿命"
+                        android:textColor="@color/white"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/button">
+                    </TextView>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/petLife"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12-15">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="年">
+                        </TextView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="原产地"
+                        android:textColor="@color/white"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/button">
+                    </TextView>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/petOrigin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="欧洲">
+                        </TextView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="体型"
+                        android:textColor="@color/white"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/button">
+                    </TextView>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+
+                        <TextView
+                            android:id="@+id/petShape"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="小型犬">
+                        </TextView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="别名"
+                        android:textColor="@color/white"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/button">
+                    </TextView>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/anotherName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="泰迪">
+                        </TextView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="护理知识"
+                    android:textSize="15sp"
+                    android:textColor="@color/whiteRed"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/orange">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1. 幼犬大概在出生后6个星期左右就断奶。从断奶到犬龄三个月左右，可在早晨7点，中午12点，下午5点和晚上10点共4次喂食，每次狗粮颗粒不超过20粒。
+2. 幼犬在出生2～3个月时，因为牙齿和下颚还没有完全发育好，应该把肉类切成细块再喂，能够更好的帮助幼犬消化食物。
+3. 2出生第4个月到第8个月，在早、中、晚喂食，一共三次，这段时间内给幼犬的喂食量大概是成犬的1/3----1/2。
+4.出生后6个月～1岁以内，这段时间正是贵宾犬成长发育速度最快时期，这个时候要多喂食一些动物性蛋白食品和及时补充生长需要的钙质和微量元素，主人也可以在狗粮中添加清水煮的胡萝卜、鸡胸肉、鸡蛋黄等食物，也更好地补充营养。">
+
+                </TextView>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

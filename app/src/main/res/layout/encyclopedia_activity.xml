@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="4dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/back_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/back"></ImageView>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/back"></ImageView>
+
+            <TextView
+                android:id="@+id/encyclopedia_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="常见宠物类型"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/encyclopedia_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"></androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="4dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宠物喂养技巧"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal">
+            </TextView>
+
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                android:id="@+id/smartRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10">
+
+            <!-- 下拉刷新头 -->
+            <com.scwang.smart.refresh.header.ClassicsHeader
+                android:id="@+id/classics_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srlTextPulling="下拉刷新"
+                app:srlTextRefreshing="正在刷新中..."
+                app:srlTextRelease="释放刷新"
+                app:srlTextFinish="刷新完成"
+                app:srlTextFailed="刷新失败"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/feeding_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <!-- 上拉加载更多的尾 -->
+                <com.scwang.smart.refresh.footer.ClassicsFooter
+                    android:id="@+id/classics_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srlTextPulling="上拉加载更多"
+                    app:srlTextLoading="正在加载中..."
+                    app:srlTextFinish="加载完成"
+                    app:srlTextFailed="加载失败"/>
+
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

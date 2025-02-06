@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 背景层 -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="25dp" />
+            <solid android:color="@color/white" />
+            <stroke android:color="@color/whiteOrange" android:width="1dp"/>
+        </shape>
+    </item>
+
+    <!-- 左边黑色到右边蓝色的渐变 -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="25dp" />
+            <gradient
+                android:startColor="@color/whiteBlue"
+                android:endColor="@color/whiteRed"
+                android:angle="0" />
+        </shape>
+    </item>
+
+</layer-list>

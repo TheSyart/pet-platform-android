@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/baseline_account_circle_24"
+                    android:layout_gravity="center_vertical">
+                </ImageView>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="狗狗小便处滴血怎么回事"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:gravity="center">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="狗狗小便处滴血可能是以下原因导致的：
+1、常见的原因是尿路感染，可以用消炎药，比如含阿莫西林、恩诺沙星或者磺胺甲氧苄氨嘧啶等成分的药物。
+2、狗狗尿道出血，最常见的就是泌尿方面的问题了，尿路感染、尿结石或是输尿管损伤等等。宠主需要及时带狗狗就医检查，在兽医指导下喂食宠尿付进行消炎，必要时住院观察或手术治疗。后期的护理中，可搭配宠德一利补充营养，同时鼓励狗狗多饮水，加快身体的循环代谢，有利于恢复。
+3、若狗狗是因为误食了洋葱、葡萄、木耳、巧克力等有毒的食物，或是水杨酸、磺胺类药物引起的尿道滴血，就要立即送医院检查、抢救，以免狗狗中毒致死。
+4、狗狗血液寄生虫的感染，比如焦虫、艾利希体的感染。建议及时咨询宠物医生。
+
+提示：
+狗狗引发小便处滴血的原因是由于狗狗们的肾脏，尿道，膀胱，或者说是泌尿系统出现了问题。所以狗主人们一定要注意区分原因，只有确定了原因才能够对症下药。">
+                    </TextView>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布时间">
+                </TextView>
+                <TextView
+                    android:id="@+id/createDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024-12-12 12:12:12">
+                </TextView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

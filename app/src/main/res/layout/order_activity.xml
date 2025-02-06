@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F4F4F4F4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="我 的 订 单"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center_horizontal|center_vertical">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp">
+        <RadioGroup
+            android:id="@+id/type_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <RadioButton
+                android:id="@+id/pet_shopping"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="宠物商品"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/grey"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/check_likebutton">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/pet_service"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="宠物服务"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/grey"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/check_likebutton">
+            </RadioButton>
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/info_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/total"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="全 部"
+                android:textColor="@color/grey"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/check_likebutton">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/ing"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/check_likebutton"
+                android:button="@null"
+                android:gravity="center"
+                android:text="待收货"
+                android:textColor="@color/grey">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/timeout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/check_likebutton"
+                android:button="@null"
+                android:gravity="center"
+                android:text="已超时"
+                android:textColor="@color/grey">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/remove"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="已取消"
+                android:textColor="@color/grey"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/check_likebutton">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/finish"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="已完成"
+                android:textColor="@color/grey"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/check_likebutton">
+            </RadioButton>
+
+        </RadioGroup>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+        <!-- 下拉刷新头 -->
+        <com.scwang.smart.refresh.header.ClassicsHeader
+            android:id="@+id/classics_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlTextPulling="下拉刷新"
+            app:srlTextRefreshing="正在刷新中..."
+            app:srlTextRelease="释放刷新"
+            app:srlTextFinish="刷新完成"
+            app:srlTextFailed="刷新失败"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <!-- 上拉加载更多的尾 -->
+        <com.scwang.smart.refresh.footer.ClassicsFooter
+            android:id="@+id/classics_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlTextPulling="上拉加载更多"
+            app:srlTextLoading="正在加载中..."
+            app:srlTextFinish="加载完成"
+            app:srlTextFailed="加载失败"/>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

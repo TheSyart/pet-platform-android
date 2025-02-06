@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="30dp"
+    app:cardBackgroundColor="@color/whiteBlue">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/pet_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/et_bg"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="完善您的爱宠信息"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="宠物头像:"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null">
+                </Space>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:id="@+id/pet_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/camera"
+                        android:scaleType="centerCrop">
+                    </ImageView>
+
+                </androidx.cardview.widget.CardView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宠物姓名:"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <EditText
+                android:id="@+id/pet_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="点击输入宠物姓名"
+                android:gravity="right|center_vertical"
+                android:textSize="15sp"
+                android:background="@null">
+            </EditText>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/pet_breed_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宠物品种:"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spinner_breed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宠物性别:"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                </Space>
+                <RadioGroup
+                    android:id="@+id/radioGroupGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/isMale"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:drawableTop="@drawable/male_sign"
+                        android:background="@drawable/check_likebutton"
+                        android:button="@null"
+                        android:layout_gravity="center_vertical"/>
+
+                    <RadioButton
+                        android:id="@+id/isFemale"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:drawableTop="@drawable/female_sign"
+                        android:background="@drawable/check_likebutton"
+                        android:button="@null"
+                        android:layout_gravity="center_vertical"/>
+                </RadioGroup>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宠物生日:"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/pet_birth"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="点击选择宠物生日"
+                android:gravity="right|center_vertical"
+                android:textSize="15sp"
+                android:background="@null">
+            </TextView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宠物毛色:"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_color"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宠物体重:"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <EditText
+                android:id="@+id/pet_weight"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="点击输入宠物体重单位"
+                android:gravity="right|center_vertical"
+                android:textSize="15sp"
+                android:background="@null"
+                android:inputType="number">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kg">
+            </TextView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注:"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/black">
+            </TextView>
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+            </Space>
+
+            <CheckBox
+                android:id="@+id/isSterilize"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="已绝育"
+                android:textColor="@color/black"
+                android:button="@null"
+                android:background="@drawable/check_likebutton">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/isVaccine"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="已打疫苗"
+                android:textColor="@color/black"
+                android:button="@null"
+                android:background="@drawable/check_likebutton"
+                android:layout_marginHorizontal="10dp">
+            </CheckBox>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保     存"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_whitered"
+            android:layout_margin="10dp">
+        </Button>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

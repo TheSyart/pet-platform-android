@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F4F4F4F4">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="客 服 咨 询"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                android:id="@+id/smartRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+
+                <!-- 下拉刷新头 -->
+                <com.scwang.smart.refresh.header.ClassicsHeader
+                    android:id="@+id/classics_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srlTextFailed="刷新失败"
+                    app:srlTextFinish="刷新完成"
+                    app:srlTextPulling="下拉刷新"
+                    app:srlTextRefreshing="正在刷新中..."
+                    app:srlTextRelease="释放刷新" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/message_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"></androidx.recyclerview.widget.RecyclerView>
+
+                <com.scwang.smart.refresh.footer.ClassicsFooter
+                    android:id="@+id/classics_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    app:srlTextFailed="加载失败"
+                    app:srlTextFinish="加载完成"
+                    app:srlTextLoading="正在加载中..."
+                    app:srlTextPulling="上拉加载更多" />
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/speech_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_contactless_24"></ImageView>
+
+                <ImageView
+                    android:id="@+id/keyboard_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/converse_keyboard"
+                    android:visibility="gone"></ImageView>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_bg">
+
+                    <EditText
+                        android:id="@+id/message_input"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请简单描述你的问题"
+                        android:padding="5dp"
+                        android:textSize="14sp"></EditText>
+
+                    <TextView
+                        android:id="@+id/speech"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:hint="按住说话"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"></TextView>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <ImageView
+                    android:id="@+id/emoji_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_insert_emoticon_24"></ImageView>
+
+                <ImageView
+                    android:id="@+id/more_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/converse_more"></ImageView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/bottom_container"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/dialogColor"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/emoji_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/emoji_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp">
+                    </androidx.recyclerview.widget.RecyclerView>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/emoji_nav_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:alpha="0.8">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/more_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/converse_photo"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:text="照 片"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold"></TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp">
+
+                        <ImageView
+                            android:id="@+id/video"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/converse_video"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:text="视 频"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold"></TextView>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/converse_file"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:text="文 件"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold"></TextView>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/converse_location"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:text="位 置"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold"></TextView>
+                    </androidx.cardview.widget.CardView>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <FrameLayout
+        android:id="@+id/video_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"></com.google.android.exoplayer2.ui.PlayerView>
+
+        <ImageView
+            android:id="@+id/image_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ImageView>
+
+        <ImageView
+            android:id="@+id/close_video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:src="@drawable/close_dialog"></ImageView>
+    </FrameLayout>
+
+</FrameLayout>

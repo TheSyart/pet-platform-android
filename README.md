@@ -5,7 +5,7 @@
 ### 1.AndroidMainifest.xml文件中  
 <img src="https://github.com/user-attachments/assets/9dbce39e-29cb-4189-b61f-a65f537de5b0" width="210px" alt="高德地图秘钥"> 
 
-### 2.网络配置（将下列文件中，使用自己的ip地址补全
+### 2.网络配置（将下列文件中，使用自己的ip地址补全)
 
 app\src\main\res\xml\network_security_config.xml文件下  
 <img src="https://github.com/user-attachments/assets/32d94cf9-6c5e-4955-974e-b12ac63890a6" width="210px" alt="网络配置1"> 

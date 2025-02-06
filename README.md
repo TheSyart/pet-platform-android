@@ -1,6 +1,6 @@
 # 宠物护理平台 - Android 移动端
 
-## 配置！[0BA05A59](https://github.com/user-attachments/assets/e88cc0f9-2a25-4169-83f0-539fb06e377d)
+## 配置！💯💯💯
 网络配置（将下列文件中，使用自己的ip地址补全）
 app\src\main\res\xml\network_security_config.xml
 app\src\main\res\values\strings.xml

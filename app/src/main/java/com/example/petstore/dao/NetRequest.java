@@ -105,6 +105,7 @@ public class NetRequest {
                             Object item = dataArray.get(i);
                             if (item instanceof JSONObject) {
                                 JSONObject itemObj = (JSONObject) item;
+
                                 for (String fieldName : fieldNames) {
 
                                     if (fieldName.equals("message")) {
@@ -121,6 +122,19 @@ public class NetRequest {
                                             // 将修改后的值存储回 JSONObject
                                             itemObj.put(fieldName, value);
                                         }
+                                    }
+
+                                    // 我的订单返回的特殊数据orderInfoList也是一个JSONArray
+                                    if (itemObj.has("orderInfoList")){
+                                        JSONArray newArray = new JSONArray(itemObj.optString("orderInfoList"));
+                                        for (int j = 0; j < newArray.length(); j++) {
+                                            Object newItem = newArray.get(j);
+                                            JSONObject newItemObj = (JSONObject) newItem;
+                                            String value = newItemObj.optString("image");
+                                            value = "http://" + context.getResources().getString(R.string.ip_address) + ":8080" + value;
+                                            newItemObj.put(fieldName, value);
+                                        }
+                                        itemObj.put("orderInfoList", newArray);
                                     }
                                 }
                             }

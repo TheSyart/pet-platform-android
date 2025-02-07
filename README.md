@@ -1,20 +1,4 @@
-# 宠物护理平台 - Android 移动端
-
-## 配置！💯💯💯
-
-### 1.AndroidMainifest.xml文件中  
-<img src="https://github.com/user-attachments/assets/9dbce39e-29cb-4189-b61f-a65f537de5b0" width="210px" alt="高德地图秘钥"> 
-
-### 2.网络配置（将下列文件中，使用自己的ip地址补全)
-
-app\src\main\res\xml\network_security_config.xml文件下  
-<img src="https://github.com/user-attachments/assets/32d94cf9-6c5e-4955-974e-b12ac63890a6" width="210px" alt="网络配置1"> 
-
-app\src\main\res\values\strings.xml文件下  
-<img src="https://github.com/user-attachments/assets/49bfce54-9f43-4da5-bc2c-1a1cbf95dfb5" width="210px" alt="网络配置2"> 
-
-
-
+# 宠物护理平台 - Android 移动端💯💯💯
 
 ## 1.简介
 Android 移动端为爱宠人士提供一站式服务。用户不仅能通过平台便捷购买宠物用品，还可预约宠物服务、了解宠物护理知识、发布动态与其他爱宠人士交流。若遇到问题，可与客服沟通及时解决订单问题。
@@ -47,4 +31,19 @@ Android 移动端为爱宠人士提供一站式服务。用户不仅能通过平
 客服咨询  
 <img src="https://github.com/user-attachments/assets/5e9945da-e496-420e-b8b0-601ca8331e32" width="210px" alt="客服咨询页面截图 1">
 <img src="https://github.com/user-attachments/assets/6797a25b-1fd6-4411-9d23-bad199fe42f1" width="210px" alt="客服咨询页面截图 2">
-<img src="https://github.com/user-attachments/assets/76266bb2-1bfb-4d46-9822-e0a1f2f38820" width="210px" alt="客服咨询页面截图 3">
+<img src="https://github.com/user-attachments/assets/76266bb2-1bfb-4d46-9822-e0a1f2f38820" width="210px" alt="客服咨询页面截图 3">  
+
+
+## 4.配置！
+
+### 1.AndroidMainifest.xml文件中  
+<img src="https://github.com/user-attachments/assets/9dbce39e-29cb-4189-b61f-a65f537de5b0" width="210px" alt="高德地图秘钥"> 
+
+### 2.网络配置（将下列文件中，使用自己的ip地址补全)
+
+app\src\main\res\xml\network_security_config.xml文件下  
+<img src="https://github.com/user-attachments/assets/32d94cf9-6c5e-4955-974e-b12ac63890a6" width="210px" alt="网络配置1"> 
+
+app\src\main\res\values\strings.xml文件下  
+<img src="https://github.com/user-attachments/assets/49bfce54-9f43-4da5-bc2c-1a1cbf95dfb5" width="210px" alt="网络配置2"> 
+

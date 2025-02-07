@@ -34,7 +34,8 @@ Android 移动端为爱宠人士提供一站式服务。用户不仅能通过平
 <img src="https://github.com/user-attachments/assets/a502e3cc-fb87-4feb-8cfa-c0c8fef0538e" width="210px" alt="主页面功能截图 4">
 <img src="https://github.com/user-attachments/assets/622f4099-8b25-4ff2-8997-40e383351548" width="210px" alt="主页面功能截图 5">
 <img src="https://github.com/user-attachments/assets/3548b397-64b4-48cc-90e1-9dca94202e23" width="210px" alt="主页面功能截图 6">
-<img src="https://github.com/user-attachments/assets/28cb248a-1dad-4b81-854a-48485df10551" width="210px" alt="主页面功能截图 7">
+<img src="https://github.com/user-attachments/assets/9c67fb30-fb24-48a2-b0f2-1b08970e551b" width="210px" alt="主页面功能截图 7">
+
 <img src="https://github.com/user-attachments/assets/a6f4d999-87b5-4d66-8d00-fe5c0b590635" width="210px" alt="主页面功能截图 8">
 <img src="https://github.com/user-attachments/assets/09847bfe-9a38-4b8f-84b0-c0064edfd097" width="210px" alt="主页面功能截图 9">
 <img src="https://github.com/user-attachments/assets/7b218753-0c66-47b2-8a86-c8939a3cc188" width="210px" alt="主页面功能截图 10">

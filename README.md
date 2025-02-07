@@ -23,7 +23,8 @@ Android 移动端为爱宠人士提供一站式服务。用户不仅能通过平
 <img src="https://github.com/user-attachments/assets/a6f4d999-87b5-4d66-8d00-fe5c0b590635" width="210px" alt="主页面功能截图 8">
 <img src="https://github.com/user-attachments/assets/09847bfe-9a38-4b8f-84b0-c0064edfd097" width="210px" alt="主页面功能截图 9">
 <img src="https://github.com/user-attachments/assets/7b218753-0c66-47b2-8a86-c8939a3cc188" width="210px" alt="主页面功能截图 10">
-<img src="https://github.com/user-attachments/assets/1b0e2894-5634-451f-9715-efe7c0415851" width="210px" alt="主页面功能截图 11">  
+<img src="https://github.com/user-attachments/assets/1b0e2894-5634-451f-9715-efe7c0415851" width="210px" alt="主页面功能截图 11">
+
 地址  
 <img src="https://github.com/user-attachments/assets/a28d662b-6834-4817-a5ba-90e330dead4a" width="210px" alt="地址页面截图 1">
 <img src="https://github.com/user-attachments/assets/a78f7f39-c440-437c-96e1-97d48f300442" width="210px" alt="地址页面截图 2">
@@ -34,7 +35,7 @@ Android 移动端为爱宠人士提供一站式服务。用户不仅能通过平
 <img src="https://github.com/user-attachments/assets/76266bb2-1bfb-4d46-9822-e0a1f2f38820" width="210px" alt="客服咨询页面截图 3">  
 
 
-## 4.配置！
+## 4.配置！  
 
 ### 1.AndroidMainifest.xml文件中  
 <img src="https://github.com/user-attachments/assets/9dbce39e-29cb-4189-b61f-a65f537de5b0" width="210px" alt="高德地图秘钥"> 
